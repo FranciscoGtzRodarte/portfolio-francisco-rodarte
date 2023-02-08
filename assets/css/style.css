@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #2c2c2c;
+  --darker-color: #252424;
+  --light-color: #f5f5f5;
+  --accent-color: #2bb907;
+  --accent-color-hover: #3bec0f2c;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--dark-color);
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.048),
+    0 0px 20px 0 rgba(0, 0, 0, 0.048);
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+li,
+a {
+  font-weight: 700;
+  font-size: 18px;
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--light-color);
+  text-align: center;
+}
+li {
+  margin-left: 2rem;
+}
+a.logo {
+  font-weight: 700;
+  font-size: 37px;
+  color: var(--accent-color);
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid var(--accent-color);
+}
+
+/* nav li.nav-link:hover::after {
+  content: "";
+  width: auto;
+  width: 25%;
+  height: 5px;
+  background-color: #ff6752;
+  position: absolute;
+  bottom: -10px;
+  left: 7%;
+} */
+
+.icons a.logo2,
+.icons #logo2 {
+  font-weight: 700;
+  font-size: 37px;
+  color: #ffffff;
+  margin-right: 10px;
+  width: 150px;
+}
+
+a.log-in {
+  background-color: var(--dark-color);
+  border: var(--accent-color) solid 2px;
+  color: var(--light-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.sent-btn {
+  background-color: var(--dark-color);
+  border: var(--accent-color) solid 2px;
+  color: var(--light-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+a.log-in:hover {
+  background-color: var(--accent-color-hover);
+  color: var(--light-color);
+}
+
+.sent-btn:hover,
+button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+header {
+  display: inline-block;
+  width: auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  width: 800px;
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  margin-left: 12%;
+}
+
+.interactive-animation {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  bottom: 10%;
+  right: 15%;
+}
+h1 {
+  margin-top: 3rem;
+  font-size: 250%;
+  font-weight: 700;
+}
+
+p {
+  font-size: 104%;
+  line-height: 25px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+span {
+  color: var(--accent-color);
+}
+button {
+  background: var(--dark-color);
+  border: var(--accent-color) solid 2px;
+  color: var(--light-color);
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 130%;
+  /* line-height: 25px; */
+  text-align: center;
+  padding: 1rem 3rem;
+  margin-top: 5%;
+  cursor: pointer;
+}
+section{
+  margin: 12%;
+}
+.about {
+  display: flex;
+  flex-flow: wrap row;
+  m 
+}
+
+.about-text {
+  width: 55%;
+  margin-left: 10%;
+}
+
+.about-text h2 {
+  margin-bottom: 10%;
+}
+
+.about-text p {
+  line-height: 1.7;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 5%;
+}
+
+.skills ul {
+  display: block;
+  margin-right: 15%;
+  line-height: 2;
+  list-style-type: circle;
+}
+
+.skills li {
+  display: block;
+  text-align: left;
+}
+
+.work h2::after{
+  content: "";
+  display: inline-block;
+  width: 50%;
+  border-bottom: 2px solid #2bb907 ;
+  margin-left: 2%;
+  position: relative;
+  margin-bottom: 0.5%;
+   
+}
+
+.featured-work{
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+    align-items: center;
+    margin: 5%;
+    position: relative;
+}
+
+h4{
+  color: var(--accent-color);
+}
+
+h3{
+  font-size: 180%;
+  margin-bottom: 5%;
+}
+
+figcaption{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featured-description{
+  background-color: var(--darker-color);
+  width: 34%;
+  padding: 1.5rem;
+  position: absolute;
+  left:-3%;
+  bottom: -10%;
+}
+
+.other-work{
+  margin-top: 12%;
+}
+
+.contact-form-section {
+  background-color: var(--dark-color);
+  z-index: 3;
+  padding: 50px;
+}
+
+footer {
+  background-color: var(--darker-color);
+}
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.contact-form {
+  text-align: center;
+  width: auto;
+  position: relative;
+  margin-bottom: 8%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+input {
+  background-color: var(--dark-color);
+  border: 0;
+  border-bottom: 2px solid #2bb907;
+  width: 50%;
+  height: 58px;
+  color: var(--accent-color);
+
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 1% auto;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+input:focus-visible {
+  outline-offset: 0px;
+  outline: var(--accent-color) auto 3px;
+}
+
+:focus-visible {
+  outline: var(--accent-color) auto 5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #455a64;
+  opacity: 0.5; /* Firefox */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 2% 6%;
+}
+
+footer li {
+  margin-left: 0;
+}
+
+.icons span {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 1%;
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+ul.icons li {
+  margin-right: 5%;
+}
+
+p.rights {
+  color: var(--light-color);
+  width: auto;
+  text-align: right;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 466px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .header-text {
+    width: 330px;
+  }
+  input {
+    width: 100%;
+    margin: 4% auto;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer ul {
+    margin-bottom: 4%;
+  }
+}
