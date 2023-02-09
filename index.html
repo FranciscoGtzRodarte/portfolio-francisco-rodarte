@@ -4,25 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+       <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Material Icons -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+  
+<!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/c0711139d1.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>My Portfolio</title>
   </head>
+  
+  
   <body>
+    <!-- Navigation bar -->
     <nav>
-      <a class="logo" href="#">frank</a>
+      <a class="logo" href="#">frankmx</a>
       <ul>
         <li class="nav-link"><a href="#about">about</a></li>
         <li class="nav-link"><a href="#work">work</a></li>
         <li class="nav-link"><a href="#contact">contact</a></li>
-        <li><a class="log-in" href="#">resume</a></li>
+        <li>
+          <a
+            class="resume"
+            href="assets/docs/Gutierrez-Rodarte F_Resume.pdf"
+            download
+            >resume <span class="material-symbols-outlined"> download </span></a
+          >
+        </li>
       </ul>
     </nav>
-
+<!-- Hero section -->
     <header>
       <div class="header-text">
         <h1>
@@ -39,11 +56,40 @@
         src="assets/images/giphy2.gif"
         alt="interactive animation"
       />
+
+      <div class="contact-info social">
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/FranciscoGtzRodarte" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/paconga/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/francisco-rodarte/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/francisco-rodarte" target="_blank"><i class="fa-brands fa-behance" ></i></a>
+            </li>
+        </ul>
+      </div>
+      </div>
+        <div class="contact-info email">
+        <ul class="e-mail">
+          <li>
+            <a href="mailto:francisco.gutierrezrodarte@du.edu"
+              >francisco.gutierrezrodarte@du.edu</a
+            >
+          </li>
+        </ul>
+      </div>
+      
     </header>
 
+    <!-- About section -->
     <section id="about" class="about">
       <div class="about-img">
-        <img src="assets/images/img-placeholder-2.png" />
+        <img src="assets/images/me-1.jpg" alt="francisco's profile picture" />
       </div>
       <div class="about-text">
         <h2>A brief story about me</h2>
@@ -79,126 +125,189 @@
         </div>
       </div>
     </section>
-
+<!-- Work section -->
     <section id="work" class="work">
       <h2>Work in motion</h2>
 
       <div class="featured-work">
         <h4>Featured work</h4>
-        <h3>Hikingp landingpage</h3>
+        <h3>Hiking friends landingpage</h3>
         <figure>
-          <img
-            src="assets/images/img-placeholder-3.png"
-            alt="hikingp website cover"
-          />
+          <a href="https://franciscogtzrodarte.github.io/mini-project-01/" target="_blank"><img src="assets/images/hikingp.jpg" alt="hikingp website cover" /></a>
           <figcaption>
             <pre>html    css   javascript   illustrator</pre>
           </figcaption>
-        </figure>
-        <div class="featured-description">
-          <ul>
-            <li><a href="#">🐱‍👤</a></li>
-            <li><a href="#">🐱‍🐉</a></li>
-          </ul>
-          <div class="description-container">
-            <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
-            </p>
+          <div class="featured-description">
+            <ul>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/mini-project-01" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/mini-project-01/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+            <div class="description-container">
+              <p>
+                A minimal, dark blue theme for VS Code, Sublime Text, Atom,
+                iTerm, and more. Available on Visual Studio Marketplace, Package
+                Control, Atom Package Manager, and npm
+              </p>
+            </div>
           </div>
-        </div>
+        </figure>
       </div>
 
       <div class="other-work">
         <h2>Other slow & steady projects</h2>
         <div class="projects-container">
           <div class="project">
-            <h3>Project name</h3>
+            <h3>Horiseon landingpage</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
+              A codebase that follows accessibility standards so that the site is optimized for search engines.
+
             </p>
-            <pre>html    css   javascript   illustrator</pre>
+            <code>html css semantics</code>
             <ul>
-              <li><a href="#">🐱‍👤</a></li>
-              <li><a href="#">🐱‍🐉</a></li>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/horiseon-landingpage" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/horiseon-landingpage/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             </ul>
           </div>
           <div class="project">
-            <h3>Project name</h3>
+            <h3>CSS Snippet Cheat Sheet</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
+              In this activity, I build a webpage that holds a collection of CSS snippets for an easy acces to learning css rules.
             </p>
-            <pre>html    css   javascript   illustrator</pre>
+            <code>html css flexbox</code>
             <ul>
-              <li><a href="#">🐱‍👤</a></li>
-              <li><a href="#">🐱‍🐉</a></li>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/css-snippet-cheatsheet" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/css-snippet-cheatsheet/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             </ul>
           </div>
           <div class="project">
-            <h3>Project name</h3>
+            <h3>Student bio</h3>
             <p>
-              A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm,
-              and more. Available on Visual Studio Marketplace, Package Control,
-              Atom Package Manager, and npm
+              A landingpage that contains brief information about the life of a student, a profile picture and a contact section.
             </p>
-            <pre>html    css   javascript   illustrator</pre>
+            <code>html css</code>
             <ul>
-              <li><a href="#">🐱‍👤</a></li>
-              <li><a href="#">🐱‍🐉</a></li>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/student-bio" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/student-bio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             </ul>
           </div>
+
+
+
+
+          <div class="project hide">
+            <h3>Horiseon landingpage</h3>
+            <p>
+              A codebase that follows accessibility standards so that the site is optimized for search engines.
+
+            </p>
+            <code>html css semantics</code>
+            <ul>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/horiseon-landingpage" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/horiseon-landingpage/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="project hide">
+            <h3>CSS Snippet Cheat Sheet</h3>
+            <p>
+              In this activity, I build a webpage that holds a collection of CSS snippets for an easy acces to learning css rules.
+            </p>
+            <code>html css flexbox</code>
+            <ul>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/css-snippet-cheatsheet" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/css-snippet-cheatsheet/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="project hide">
+            <h3>Student bio</h3>
+            <p>
+              A landingpage that contains brief information about the life of a student, a profile picture and a contact section.
+            </p>
+            <code>html css</code>
+            <ul>
+              <li>
+                <a href="https://github.com/FranciscoGtzRodarte/student-bio" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="https://franciscogtzrodarte.github.io/student-bio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+          </div>
+
         </div>
-        <button>Show more</button>
+        <button class="show-more">Show more</button>
+       
+        
       </div>
     </section>
 
+    <!-- Contact section -->
     <section id="contact" class="contact-form-section">
       <div class="contact-text">
-        <h2>Let's make something great!.</h2>
+        <h2>Let's make <br />something move!</h2>
         <p>
-          I’m seeking out opportunities to collaborate with companies / agencies
-          / individuals. Bring my collective design to the table where we can
-          work together to solve real business-problems in a way that optimizes
-          all of our respective experience and knowledge. Let me know what you
-          need by filling in this quick website brief.‍
+          I’m seeking out opportunities to collaborate with valuable companies,
+          creative agencies, innovative individuals. <br />Bring my
+          collaborative motion design to the screen where we can work together
+          to solve communication problems in a way that optimizes any kind of
+          bussiness in an effective and attractive way. <br /><br />Let me know
+          what you need by filling in this quick website form.‍
         </p>
       </div>
       <div class="contact-form">
         <form>
-          <label>Your Name</label>
-          <input placeholder="Name" type="text" />
-          <label>Email Address</label>
-          <input type="email" placeholder="Email" />
-          <label>Your Message</label>
-          <input
-            type="text"
-            placeholder="Hi! We need your help to make a beautiful website about our company showcasing our products.
-          We have a really good budget in mind. Let’s collaborate together."
-          />
+          <div class="basic-info">
+            <div class="name-form">
+              <label>Your Name</label>
+              <input placeholder="Name" type="text" />
+            </div>
+            <div class="email-form">
+              <label>Email Address</label>
+              <input type="email" placeholder="Email" />
+            </div>
+          </div>
+          <div class="message-form">
+            <label>Your Message</label>
+            <textarea
+              class="message-area"
+              rows="3"
+              placeholder="Hi! We need your help to make a beautiful website about our company showcasing our products.  We have a really good budget in mind. Let’s collaborate together."
+            ></textarea>
+          </div>
           <input class="sent-btn" type="button" value="Let's do this" />
         </form>
       </div>
     </section>
 
+
+    <!-- Footer -->
     <footer>
       <ul class="icons">
-        <button>Whatsaap me</button>
-        <li>
-          <a href="#"><span class="material-symbols-rounded"> hiking</span></a>
-        </li>
-        <li>
-          <a href="#"
-            ><span class="material-symbols-rounded"> landscape </span></a
-          >
-        </li>
-        <li>
-          <a href="#"><span class="material-symbols-rounded"> sunny </span></a>
-        </li>
+        <li><button class="whatsaap"><i class="fa-brands fa-whatsapp"></i>Whatsaap me</button></li>
+          <li>
+            <a href="mailto:francisco.gutierrezrodarte@du.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/FranciscoGtzRodarte" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/paconga/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/francisco-rodarte/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/francisco-rodarte" target="_blank"><i class="fa-brands fa-behance"></i></a>
+          </li>
       </ul>
       <p class="rights">Design and build by Francisco Rodarte</p>
     </footer>
