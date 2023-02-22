@@ -1,5 +1,3 @@
-# portfolio-francisco-rodarte
-
 # Professional Portfolio
 
 ## Description
