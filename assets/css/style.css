@@ -379,6 +379,14 @@ is set as a flexbox with the flex items in column*/
 /*projects container is set to flexbox with items in a row*/
 .projects-container {
   display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.projects,
+.more-projects {
+  display: flex;
   flex-flow: wrap row;
   justify-content: center;
   align-items: center;

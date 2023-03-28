@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Material Icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32">
-<link rel="icon" type="image/png" sizes="16x16" href="../portfolio-francisco-rodarte/assets/images/favicon/favicon-16x16.png">
-  
-<!-- FontAwesome Icons -->
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/favicon-32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../portfolio-francisco-rodarte/assets/images/favicon/favicon-16x16.png"
+    />
+
+    <!-- FontAwesome Icons -->
     <script
       src="https://kit.fontawesome.com/c0711139d1.js"
       crossorigin="anonymous"
     ></script>
 
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <title>My Portfolio</title>
   </head>
-  
-  
+
   <body>
     <!-- Navigation bar -->
     <nav>
@@ -43,7 +59,7 @@
         </li>
       </ul>
     </nav>
-<!-- Hero section -->
+    <!-- Hero section -->
     <header>
       <div class="header-text">
         <h1>
@@ -53,7 +69,7 @@
         <p>
           Motion Designer <span><code>&&</code></span> FrontEnd Developer
         </p>
-        <button>Let's go!</button>
+        <a href="#about"> <button>Let's go!</button></a>
       </div>
       <img
         class="interactive-animation"
@@ -62,23 +78,34 @@
       />
 
       <div class="contact-info social">
-          <ul class="socials">
-            <li>
-              <a href="https://github.com/FranciscoGtzRodarte" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/paconga/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/francisco-rodarte/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/francisco-rodarte" target="_blank"><i class="fa-brands fa-behance" ></i></a>
-            </li>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/FranciscoGtzRodarte" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/paconga/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/francisco-rodarte/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/francisco-rodarte" target="_blank"
+              ><i class="fa-brands fa-behance"></i
+            ></a>
+          </li>
         </ul>
       </div>
-      </div>
-        <div class="contact-info email">
+
+      <div class="contact-info email">
         <ul class="e-mail">
           <li>
             <a href="mailto:francisco.gutierrezrodarte@du.edu"
@@ -87,7 +114,6 @@
           </li>
         </ul>
       </div>
-      
     </header>
 
     <!-- About section -->
@@ -129,28 +155,165 @@
         </div>
       </div>
     </section>
-<!-- Work section -->
+    <!-- Work section -->
     <section id="work" class="work">
       <h2>Work in motion</h2>
 
       <div class="featured-work">
         <h4>Featured work</h4>
+        <h3>Discovering Denver</h3>
+        <figure>
+          <a href="https://whispering-dawn-72162.herokuapp.com/" target="_blank"
+            ><img
+              src="assets/images/discover-denver.png"
+              alt="discover denver website cover"
+          /></a>
+          <figcaption>
+            <pre>
+javascript bootstrap mysql2 express.js sequalize handlebars</pre
+            >
+          </figcaption>
+          <div class="featured-description">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/miamauro/discovering-denver"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://whispering-dawn-72162.herokuapp.com/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="description-container">
+              <p>
+                Discovering Denver is a full-stack application allowing users to
+                learn more about Denver hot spots. Read reviews and see what
+                others have to say or post your own to share an experience.
+              </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <div class="featured-work">
+        <h3>Flix and Tails</h3>
+        <figure>
+          <a
+            href="https://reverofsuturb.github.io/FlixandTails/"
+            target="_blank"
+            ><img
+              src="assets/images/flixtails.png"
+              alt="flix and tails website cover"
+          /></a>
+          <figcaption>
+            <pre>bootstrap   javascript   third-web-parties  illustrator</pre>
+          </figcaption>
+          <div class="featured-description">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/reverofsuturb/FlixandTails"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://reverofsuturb.github.io/FlixandTails/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="description-container">
+              <p>
+                Out of ideas for home date night? A tool to present a user with
+                new and unique ideas for dinner recipes, drinks, and movies all
+                in one place. 
+              </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <div class="featured-work">
+        <h3>Weather Dashboard</h3>
+        <figure>
+          <a
+            href="https://franciscogtzrodarte.github.io/weather-dashboard/"
+            target="_blank"
+            ><img
+              src="assets/images/weather-dashboard.png"
+              alt="weather dashboard website cover"
+          /></a>
+          <figcaption>
+            <pre>bootstrap   javascript   third-web-parties  APIs</pre>
+          </figcaption>
+          <div class="featured-description">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/FranciscoGtzRodarte/weather-dashboard"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://franciscogtzrodarte.github.io/weather-dashboard/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="description-container">
+              <p>
+                A weather dashboard that shows the current weather, temperature,
+                wind speed and humidity percentage of a city. Besides it will
+                also show a forecast of the following 5 days.
+              </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <div class="featured-work">
         <h3>Hiking friends landingpage</h3>
         <figure>
-          <a href="https://franciscogtzrodarte.github.io/mini-project-01/" target="_blank"><img src="assets/images/hikingp.jpg" alt="hikingp website cover" /></a>
+          <a
+            href="https://franciscogtzrodarte.github.io/mini-project-01/"
+            target="_blank"
+            ><img src="assets/images/hikingp.jpg" alt="hikingp website cover"
+          /></a>
           <figcaption>
             <pre>html    css   javascript   illustrator</pre>
           </figcaption>
           <div class="featured-description">
             <ul>
               <li>
-                <a href="https://github.com/FranciscoGtzRodarte/mini-project-01" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a
+                  href="https://github.com/FranciscoGtzRodarte/mini-project-01"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </li>
-              <li><a href="https://franciscogtzrodarte.github.io/mini-project-01/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li>
+                <a
+                  href="https://franciscogtzrodarte.github.io/mini-project-01/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
             </ul>
             <div class="description-container">
               <p>
-                A digital space where you can find your perfect hiking match friend to make new and incredible adventures. You only need to input your email and our algorithms will make the rest. 
+                A digital space where you can find your perfect hiking match
+                friend to make new and incredible adventures. You only need to
+                input your email and our algorithms will make the rest.
               </p>
             </div>
           </div>
@@ -160,95 +323,233 @@
       <div class="other-work">
         <h2>Other slow & steady projects</h2>
         <div class="projects-container">
-          <div class="project">
-            <h3>Horiseon landingpage</h3>
-            <p>
-              A codebase that follows accessibility standards so that the site is optimized for search engines.
-
-            </p>
-            <code>html css semantics</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/horiseon-landingpage" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/horiseon-landingpage/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
+          <div class="projects">
+            <div class="project">
+              <h3>Blog app</h3>
+              <p>
+                A CMS-style blog site similar to a Wordpress site, where
+                developers can publish their blog posts and comment on other
+                developers’ posts as well.
+              </p>
+              <code>MVC handlebars sequelize</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/blog-app"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://polar-everglades-70694.herokuapp.com/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>E-commerce Back-End</h3>
+              <p>
+                The back end for an e-commerce site that has a working
+                Express.js API to use Sequelize to interact with a MySQL
+                database.
+              </p>
+              <code>mysql2 sequalize express.js</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/ecommerce-backend"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/ecommerce-backend"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Employee Manager</h3>
+              <p>
+                A landingpage that contains brief information about the life of
+                a student, a profile picture and a contact section.
+              </p>
+              <code>inquirer mysql2 node.js</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/employee-manager"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/employee-manager"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="project">
-            <h3>CSS Snippet Cheat Sheet</h3>
-            <p>
-              In this activity, I build a webpage that holds a collection of CSS snippets for an easy acces to learning css rules.
-            </p>
-            <code>html css flexbox</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/css-snippet-cheatsheet" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/css-snippet-cheatsheet/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
+          <div class="more-projects">
+            <div class="project">
+              <h3>Note Taker</h3>
+              <p>
+                An application called Note Taker that can be used to write and
+                save notes. This application uses an Express.js back end and
+                saves and retrieves notes data from a JSON file.
+              </p>
+              <code>express.js heroku</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/noteTaker-1"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://safe-brushlands-44229.herokuapp.com/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Word Guess Game</h3>
+              <p>
+                An Oscar's awards edition word guess game. Have a countdown and
+                saves your score.
+              </p>
+              <code>javascript web APIs</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/word-guess-game"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://franciscogtzrodarte.github.io/word-guess-game/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Javascript Code Quiz</h3>
+              <p>
+                A timed coding quiz with multiple-choice questions. This app
+                runs in the browser, and will feature dynamically updated HTML
+                and CSS powered by JavaScript code.
+              </p>
+              <code>html css javascript</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/javascript-code-quiz"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://franciscogtzrodarte.github.io/javascript-code-quiz/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Horiseon landingpage</h3>
+              <p>
+                A codebase that follows accessibility standards so that the site
+                is optimized for search engines.
+              </p>
+              <code>html css semantics</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/horiseon-landingpage"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://franciscogtzrodarte.github.io/horiseon-landingpage/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>CSS Snippet Cheat Sheet</h3>
+              <p>
+                In this activity, I build a webpage that holds a collection of
+                CSS snippets for an easy acces to learning css rules.
+              </p>
+              <code>html css flexbox</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/css-snippet-cheatsheet"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://franciscogtzrodarte.github.io/css-snippet-cheatsheet/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="project">
+              <h3>Student bio</h3>
+              <p>
+                A landingpage that contains brief information about the life of
+                a student, a profile picture and a contact section.
+              </p>
+              <code>html css</code>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/FranciscoGtzRodarte/student-bio"
+                    target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://franciscogtzrodarte.github.io/student-bio/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="project">
-            <h3>Student bio</h3>
-            <p>
-              A landingpage that contains brief information about the life of a student, a profile picture and a contact section.
-            </p>
-            <code>html css</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/student-bio" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/student-bio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-          </div>
 
-
-
-
-          <div class="project hide">
-            <h3>Horiseon landingpage</h3>
-            <p>
-              A codebase that follows accessibility standards so that the site is optimized for search engines.
-
-            </p>
-            <code>html css semantics</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/horiseon-landingpage" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/horiseon-landingpage/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-          </div>
-          <div class="project hide">
-            <h3>CSS Snippet Cheat Sheet</h3>
-            <p>
-              In this activity, I build a webpage that holds a collection of CSS snippets for an easy acces to learning css rules.
-            </p>
-            <code>html css flexbox</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/css-snippet-cheatsheet" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/css-snippet-cheatsheet/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-          </div>
-          <div class="project hide">
-            <h3>Student bio</h3>
-            <p>
-              A landingpage that contains brief information about the life of a student, a profile picture and a contact section.
-            </p>
-            <code>html css</code>
-            <ul>
-              <li>
-                <a href="https://github.com/FranciscoGtzRodarte/student-bio" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li><a href="https://franciscogtzrodarte.github.io/student-bio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-          </div>
-
+          <button class="show-more">Show more</button>
         </div>
-        <button class="show-more">Show more</button>
-       
-        
       </div>
     </section>
 
@@ -290,28 +591,45 @@
       </div>
     </section>
 
-
     <!-- Footer -->
     <footer>
       <ul class="icons">
-        <li><button class="whatsaap"><i class="fa-brands fa-whatsapp"></i>Whatsaap me</button></li>
-          <li>
-            <a href="mailto:francisco.gutierrezrodarte@du.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/FranciscoGtzRodarte" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/paconga/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/francisco-rodarte/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/francisco-rodarte" target="_blank"><i class="fa-brands fa-behance"></i></a>
-          </li>
+        <li>
+          <button class="whatsaap">
+            <i class="fa-brands fa-whatsapp"></i>Whatsaap me
+          </button>
+        </li>
+        <li>
+          <a href="mailto:francisco.gutierrezrodarte@du.edu" target="_blank"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/FranciscoGtzRodarte" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/paconga/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/francisco-rodarte/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/francisco-rodarte" target="_blank"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+        </li>
       </ul>
       <p class="rights">Design and build by Francisco Rodarte</p>
     </footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
