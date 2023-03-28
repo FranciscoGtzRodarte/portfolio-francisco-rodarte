@@ -384,6 +384,7 @@ is set as a flexbox with the flex items in column*/
   align-items: center;
   margin-top: 5%;
 }
+
 .projects,
 .more-projects {
   display: flex;
